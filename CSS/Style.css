@@ -1,0 +1,144 @@
+@import 'utilites.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+body{
+    font-family: 'Garamond';
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 px;
+    margin: 0 auto;
+
+}
+
+.container  h1{
+    font-size: 2rem;
+    font-weight: 40;
+    line-height: 1;                                                                                                                    
+    margin-bottom: 2rem;
+   text-align: center;
+color: #FFFFFF;
+}
+
+.container  h3{
+    font-size: 1rem;
+    font-weight: 20;
+    line-height: 1;                                                                                                                    
+    margin-bottom: 2rem;
+   text-align: center;
+color: #FFFFFF;
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+  
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+     margin-right: 5rem;
+}
+.hero{
+    padding: 5rem 0;
+}
+.hero .left img{
+    width: 350px;
+}
+.hero .right{
+    color: var(--pure);
+
+}
+.hero .right h3{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 80;
+    line-height: 1.5;                                                                                                                    
+    margin-bottom: 2rem;
+   text-align: center;
+
+}
+
+section{
+    padding: 4rem 0;
+    font-family: 'Nanum Myeongjo','Times New Roman', Times, serif;
+}
+
+
+section.about h1,h3{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+text-align: center;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+
+
+
+
+
+section.about .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+}
+section.about .card-wrapper .card{
+    background: wheat;
+    padding: 3rem 2rem;
+    padding-top: 6rem;
+    position: relative;
+    text-align: center;
+  margin-top: 3rem;
+    transition: all .3s ease;
+}
+section.about .card-wrapper .card img{
+    position: absolute;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.about .card-wrapper .card h4
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+
+}
+section.about .card-wrapper .card:hover{
+    background: coral;
+}
+section.about .card-wrapper .card:hover h2,section.Project .card-wrapper .card:hover h5,section.Project .card-wrapper .card:hover p{
+    color: cornsilk;
+}
+
